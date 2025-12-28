@@ -786,3 +786,23 @@ ul {
     object-fit: cover;
     display: block;
 }
+
+/* =========================
+   Hizmetler sayfası kart içi resim (EK)
+   Bu bloğu style.css dosyanın EN ALTINA ekle
+   ========================= */
+
+.service-thumb{
+  width: 100%;
+  height: 160px;           /* İstersen 140 yapabilirsin */
+  margin: 12px 0 10px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.service-thumb img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
