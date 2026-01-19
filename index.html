@@ -1,6 +1,24 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
+
+    <!-- Event snippet for Kişi (1) conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-17846988824/e4k1CKnsiOgbEJjgjb5C',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
